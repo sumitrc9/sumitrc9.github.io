@@ -2,28 +2,108 @@
 <html>
 <head>
 	<title>Ethics of Autonomous Vehicles: Cybersecurity & Privacy</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+	<style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+
+    p, h1, ol, h3, h2 {
+    	margin-left: 20%;
+    	margin-right: 20%;
+    	line-height: 1.5;
+    }
+
+    p, li {
+    	font-size: 18px;
+    }
+
+    ol {
+    counter-reset: list;
+	}
+	ol > li {
+	    list-style: none;
+	}
+	ol > li:before {
+	    content: "["counter(list) "] ";
+	    counter-increment: list;
+	}
+  </style>
 </head>
 <body>
+
+	<nav class="navbar navbar-inverse">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>                        
+	      </button>
+	      <a class="navbar-brand" href="home.html"><i class='fas fa-car-side' style='font-size:24px'></i></a>
+	    </div>
+	    <div class="collapse navbar-collapse" id="myNavbar">
+	      <ul class="nav navbar-nav">
+	        <li><a href="mdm.html">Moral Decision Making</a></li>
+	        <li><a href="di.html">Design & Implementation</a></li>
+	        <li><a href="lpr.html">Liability & Professional Responsibility</a></li>
+	        <li><a href="cp.html">Cybersecurity & Privacy</a></li>
+	        <li><a href="sei.html">Socio-Economic Impact</a></li>
+	      </ul>
+	      <!-- <ul class="nav navbar-nav navbar-right">
+	        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+	      </ul> -->
+	    </div>
+	  </div>
+	</nav>
+
 	<h1>Cybersecurity & Privacy</h1>
 
 	<p>
-	Cybersecurity is a serious concern with respect to the introduction of autnomous vehicles onto the road.
+	Autonomous Vehicles have been fascinating consumers, manufacturers, and governments all across the world. They are designed to provide improved safety and satisfaction. However, they are bringing along increased challenges to cybersecurity and data privacy.
+	</p>
+
+	<h2>Vulnerabilities of AVs</h2>
+	<p>
+
+	Cybersecurity is a serious concern for self-driving vehicles. Connecting autonomous vehicles to the internet can make a vast amount of data easily accessible to both the vehicle and its driver  [1]. However, this poses a serious cybersecurity threat. Internet connections can be exploited by hackers [4]. Criminals can hack into and take control of the vehicle’s operating system. They can intervene with sensors that collect information about the environment causing them to malfunction leading to a severe accident [4]. Hackers can redirect self-driving vehicles to a destination of their choice and demand ransom. Terrorists can gain access to networks in a particular area and disrupt all vehicles in that region causing major accidents. Hackers can potentially gain access to the driver's location and final destination. They can use it to perform various crime. All of these insecuities pose a severe risk to public safety. 
+	</p>
+	<p>
+	Companies need to develop autonomous vehicles to ensure that enough security infrastructure is in place to protect users from cyber attacks and tampering. 
+	</p>
+	<p>
+	Autonomous vehicles will be actively collecting driver’s location data for navigation and improved functionality. This leads to a major privacy concern with the user’s personal and location information. Upon obtaining an autonomous vehicle, individuals should be made aware that their location data is being tracked and used [4]. They should have a say on who can see their location data and how it's being used [1]. Nevertheless, location tracking raises broader concerns about mass surveillance of the general public [2]. Data at this scale needs to be regulated to make sure that it is not maliciously used. 
+	</p>
+
+	<h2>Addressing these Concerns</h2>
+
+	<p>
+
+	Governing organizations, such as the EU, have already passed legislation that regulates the usage of such data [2]. One of the core reasons for identifying privacy vulnerabilities is out of respect for the user [3]. There needs to be transparency regarding what data is being collected and who can track and locate any given autonomous vehicle. [3]. Legal protection of data from governing authorities is required for achieving this. Policymakers will have to work for the benefit of the public in order to make sure that collected data is used appropriately and with consent.
 	</p>
 
 	<p>
-	One of the main concerns is who can track and locate any given autonomus vehicle.
+	If privacy and cybersecurity concerns are not properly handled, public safety can be severely compromised. The introduction of a revolutionary technology like autonomous vehicles raises several privacy and cybersecurity concerns. Reducing these concerns can only be done if companies and policymakers work together for the benefit and security of users. There will always be room for improvement to existing cybersecurity and privacy rules as technology evolves. Companies and policymakers will have to work collaboratively and continuously to keep improving the policies for protecting the consumer.
 	</p>
 
-	<p>
-	Nevertheless, there are c
+	<h3>References:</h3>
 
-	There is still room for improvement to existing cybersecurity and privacy protocols. 
-	</p>
+	<ol>
 
-	<p>
-	References:
+	<li> J.-E. Mai, "Big data privacy: The datafication of personal information," The Information Society, 13-Apr-2016. [Online]. Available: https://www.tandfonline.com/doi/full/10.1080/01972243.2016.1153010?needAccess=true. [Accessed: 27-July-2020]. </li> <br>
 
-	</p>
+	<li> A. Taeihagh and H. Si Min Lim, "Governing autonomous vehicles: emerging responses for safety, liability, privacy, cybersecurity, and industry risks," Transport Reviews, 01-Dec-2017. [Online]. Available: https://www.tandfonline.com/doi/full/10.1080/01441647.2018.1494640. [Accessed: 27-July-2020]. </li> <br>
+
+	<li> A. Cavoukian, "Privacy by Design - The 7 Foundational Principles: Implementation and Mapping of Fair Information Practices," Data Protection Industries, Oct-2017. [Online]. Available: http://dataprotection.industries/wp-content/uploads/2017/10/privacy-by-design.pdf. [Accessed: 27-July-2020]. </li> <br>
+
+	<li> D. J. Glancy, "Privacy in Autonomous Vehicles," Santa Clara Law Review, 14-Dec-2012. [Online]. Available: https://digitalcommons.law.scu.edu/cgi/viewcontent.cgi?article=2728&context=lawreview. [Accessed: 27-July-2020]. </li> <br>
+	</ol>
+
 
 </body>
 </html>

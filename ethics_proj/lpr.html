@@ -2,8 +2,65 @@
 <html>
 <head>
 	<title>Ethics of Autonomous Vehicles: Liability & Professional Responsibility</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+	<style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+
+    p, h1, ol, h3, h2 {
+    	margin-left: 20%;
+    	margin-right: 20%;
+    	line-height: 1.5;
+    }
+
+    p, li {
+    	font-size: 18px;
+    }
+
+    ol {
+    counter-reset: list;
+	}
+	ol > li {
+	    list-style: none;
+	}
+	ol > li:before {
+	    content: "["counter(list) "] ";
+	    counter-increment: list;
+	}
+  </style>
 </head>
 <body>
+
+	<nav class="navbar navbar-inverse">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>                        
+	      </button>
+	      <a class="navbar-brand" href="home.html"><i class='fas fa-car-side' style='font-size:24px'></i></a>
+	    </div>
+	    <div class="collapse navbar-collapse" id="myNavbar">
+	      <ul class="nav navbar-nav">
+	        <li><a href="mdm.html">Moral Decision Making</a></li>
+	        <li><a href="di.html">Design & Implementation</a></li>
+	        <li><a href="lpr.html">Liability & Professional Responsibility</a></li>
+	        <li><a href="cp.html">Cybersecurity & Privacy</a></li>
+	        <li><a href="sei.html">Socio-Economic Impact</a></li>
+	      </ul>
+	      <!-- <ul class="nav navbar-nav navbar-right">
+	        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+	      </ul> -->
+	    </div>
+	  </div>
+	</nav>
 	<h1>Liability & Professional Responsibility</h1>
 
 	<p>
@@ -11,94 +68,113 @@
 
 	</p>
 
-	<p>
-		
-	People who will design these vehicles will 
-
-
-	Professionals are the most knowledgeable about their field. As such, they have the professional responsibility to make sure that ends achieved meet ethical standards [7]. On a micro-ethical level, this responsibility falls upon designers and engineers. Designers of autonomous vehicles have a say in the higher level decision making process and will need to abide by ethical principles when developing these processes.  In order to uphold ethical standards, both parties become ethically obligated to test their products
-	</p>
+	<h2>Role of Designers</h2>
 
 	<p>
 		
-	Programmers must take it upon themselves to 
+	Professionals are the most knowledgeable about their field. As such, they have the professional responsibility to make sure that ends achieved meet ethical standards [1]. People who will design autonomous vehicles will need to take it upon themselves to ensure accessibility and ethical soundness. Designers of autonomous vehicles have a say in the higher level decision making process and will need to abide by globally agreed-upon ethical principles when developing these processes. They will also need to take into account how to accommodate the myriad of demographics that will be using this technology in order to ensure accessibility for all. In addition, designers are ethically obligated to test their products and identify any edge cases where the technology might fail. If these tests are not performed properly, it can be said that the designers did not strive to make the best technology possible, and the liability of any incident including autonomous vehicles will fall upon them.
+	</p>
 
-	Engineers must verify that the designer’s decisions are ethically sound when implementing them into the self-driving car [8].
+	<h2>Role of Programmers</h2>
 
+	<p>
+
+	On the other hand, programmers and engineers must verify that the designer’s decisions are ethically sound when implementing them into the self-driving car [2]. These professionals are directly responsible for verifying that the design choices made by designers are sound and can be applied to the autonomous vehicle. One of the major responsibilities for the engineers developing this technology is a need to minimize algorithmic bias. While developing autonomous vehicles, it must be paramount to ensure that there is minimal algorithmic bias in order to uphold ethical standards. 
+
+	</p>
+
+	<h3>Addressing Algorithmic Bias</h3>
+
+	<p>
+
+	Autonomous vehicles make their decisions using computer vision and other in-built algorithms that are all susceptible to various forms of algorithmic bias. An instance of this can be seen in the accident with Uber’s prototype for an autonomous vehicle. The automobile was unable to detect a pedestrian in the road causing an unfortunate accident [9]. This was especially concerning because the victim appeared similar to what many handicapped people look like. One of the causes for this accident can be linked towards representation bias in the algorithm where the dataset was not adequate with respect towards all possible scenarios the autonomous vehicles may face [3]. In this case, the model driving the vehicle did not receive sufficient data regarding identifying disabled people. In machine learning, algorithmic biases originate from the comprehensiveness of the dataset [4]. 
+
+	</p>
+	<p>
+
+	Self-driving cars are likely to be trained within confined cities or areas [5]. Since the vehicles are being trained in a localized environment, they tend to follow the norms of the region they were trained and tested in. This can lead toward biased outcomes when the car is used in different environments. Data that is based upon one city or area is destined to be biased since it is not encompassing all possible contexts the vehicle could be in.  
 	
+	</p>
+	<p>
 
-	Programmers will need to minimize algorithmic bias. 
+	To develop the best technology possible, programers have the professional responsibility to mitigate algorithmic bias. Fair algorithms must give similar predictions for similar individuals [3]. One way to reduce bias is by using better data collection practices to create more comprehensive training scenarios [3]. Current datasets do not always encompass the scope they need to. For example, many computer vision algorithms struggle to identify people of different ethnicities because the models were not exposed to comprehensive datasets. This type of bias can be minimized by ensuring that images used in these datasets are property labeled alongside more thorough verification strategies [4]. Nevertheless, thease biases highlight one of machine learning’s shortcomings. Strongly defined labels make it difficult to properly evaluate abstract principles such as fairness and morality [6]. Although this is a problem that cannot be directly addressed with current AI research, as the field evolves, engineers will need to look for possible ways to eliminate bias through more dynamic labelling of data. 
 
-		
-	While developing autonomous vehicles, it must be paramount to ensure that there is minimal algorithmic bias in order to uphold ethical standards. Oftentimes, the moral decision making algorithms of the vehicle will be reflective of the ethical ideologies of the programmer. 
+	</p>
+	<p>
 
+	When designing ethical algorithms, biases in the program are reflective of the ethical ideologies of the people who design them [5]. A solution to this type of bias might be to include more diversity of thought in current autonomous vehicle companies to ensure that varying ethical principles are contemplated and collectively decided upon when being applied to an autonomous vehicle. Thus, it becomes the responsibility of the company to have a diverse workforce to minimize algorithmic bias. 
 
-	Autonomous vehicles make the majority of their decisions using computer vision and other in-built algorithms. However, many of these algorithms are susceptible to a form of algorithmic bias. One instance of this is evident in the accident regarding one of Uber’s prototypes for an autonomous vehicle. The automobile was unable to detect a pedestrian in the road causing an unfortunate accident. One of the causes for this accident can be linked towards representation bias in the algorithm where the dataset was not adequate with respect towards all possible scenarios the autonomous vehicles may face [1].  In machine learning, most algorithmic biases originate from the quality of the dataset [2]. As of right now, most self-driving cars are likely to be trained within specific cities or areas [3]. Since the vehicles are being trained in a localized environment, they are likely to have learned to follow the norms of the region they were trained and tested in. This can lead toward biased scenarios when the vehicle is used in  different contexts. Data that is centered around one city or area will be biased since the dataset was not comprehensive of all of the environments the car could be in. 
+	</p>
+	<p>
 
-	In order to ensure that autonomous vehicles can function to the best of their ability, algorithmic bias will need to be mitigated. Fair algorithms will need to give similar predictions for similar individuals [1]. One possible method for reducing bias is by using better data collection practices and more comprehensive testing scenarios [1]. As aforementioned, many of the current datasets do not encompass the scope they need to. For example, many computer vision algorithms struggle to identify people of different ethnicities because the machine learning models were not exposed to comprehensive datasets. This type of bias can be minimized by ensuring that images used in these datasets are property labeled alongside other different verification strategies [2]. Currently one of machine learning’s shortcoming is that strictly defined labels make it difficult to properly evaluate abstract principles such as fairness and discrimination [4]. Although this is a problem that cannot be directly addressed in current AI research, as the field evolves, a possible way to eliminate bias may come from more dynamic labelling of data. On a more philosophical note, a common ideology is that fair algorithms will abide by the principles of egalitarianism since it can provide a sense of deontic justice [4]. When designing ethical algorithms, bais can arise from the nature of the people who design them and reflect their own personal ethics [3]. A solution to this type of bias might be to include more diversity of thought in current autonomous vehicle companies to ensure that varying ethical principles are contemplated and collectively decided upon when being applied to an autonomous vehicle. 
+	The ideal self-driving vehicle will minimize algorithmic biases and prioritize the safety of all actors involved. It is the professional responsibility of programmers to ensure that proper ethical principles are applied when developing the algorithms behind self-driving vehicles.
 
-	The ideal self-driving will minimize and algorithmic biases and prioritize the safety of all actors involved. To accomplish this, it becomes the professional responsibility of the programmers and designers to ensure that proper ethical principles are applied when developing the algorithms that will some day revolutionize transportation.
+	</p>
 
+	<p>	
 
+	On the other hand, many of the more the macro-ethical responsibilities of autonomous vehicles fall primarily onto corporate leaders and public policy makers. 
 
+	</p>
+
+	<h2>Role of Corporations</h2>
+
+	<p>
+
+	With respect to self-driving cars, product liability is a serious concern. By removing a human driver from the liability equation, it becomes difficult to identify who is responsible in the case of a malfunction. Liability can fall anywhere among the company which produced the technology, the manufacturer of the vehicle, the engineers, or the user [7]. Occasionally, companies try to transfer all liability to the consumer by making them sign a terms and conditions document. Nonetheless, many of the principles of professional responsibility suggest that this is not ethically sound. Tech companies need to be held accountable if the technology the release is not the best that it can be. Corporations must take the fatal premise into account and consider the ethics of self-driving vehicles before releasing them to the public. In a future involving autonomous vehicles, companies will need to become responsible for the infrastructure that they introduce. 
+
+	</p>
+
+	<h2>Role of Policy Makers</h2>
+
+	<p>
+	
+	Public policy makers will need to take it upon themselves to write policy that will support the introduction of autonomous vehicles. They have to create policy regarding autonomous vehicles that delegates liability as dictated by the distribution of professional responsibility. These people will also need to be concerned with modifying infrastructure to support the new technology. Policy makers will need to experiment and identify the best way to introduce autonomous vehicles to urban environments [8]. Another concern for policy makers will be the interactions between autonomous vehicles and pedestrians and cyclists. City planners will need to test several ways self-driving cars can be integrated without disrupting or endangering other members of society [8]. Automation calls for a rewrite in political liability laws as anybody throughout the supply chain can be liable for a malfunctioning robot [10]. As such is the case, policy makers need to become increasingly flexible as self-driving cars are assimilated into society. 
+	
 
 	</p>
 
 	<p>
 	
-	Additional liability will fall on corporate leaders 
+	The major issue regarding the introduction of autonomous vehicles is identifying who is at fault when the machine does not behave as expected. When analyzing accidents, it is important to consider the various agents that were involved. 
 
-	On the other hand, the macro-ethical responsibilities of autonomous vehicles fall primarily onto corporate leaders and public policy makers. With respect to self-driving cars, the primary macro-ethical issue becomes product liability. By removing a human driver from the liability equation, it becomes difficult to pinpoint who is responsible in the case of a malfunction. Liability can fall anywhere among the company which produced the technology, the manufacturer of the vehicle, the engineers, or the user [5]. Occasionally, companies transfer all liability to the consumer by making them sign a terms and conditions document. Nonetheless, the principles of professional responsibility may suggest that this is not ethically sound. 
-
-	Fatal premise must be taken into account,
-	</p>
-
-	<p>
-	
-	Public policy makers will need to take it upon themselves to 
-
-	Public policy makers need to be able to put into place policy regarding autonomous vehicles that delegates liability as dictated by the distribution of professional responsibility.
-
-
-	A more indirect stakeholder of self-driving cars are public-policy makers and city planners. Primarily, these people will be concerned with the need to modify infrastructure to support this technology. Policy makers will need to experiment and identify the best way to introduce autonomous vehicles to urban environments [6]. Another concern for policy makers will be the interactions between autonomous vehicles and pedestrians and cyclists. City planners will need to test several ways self-driving cars can be integrated without disrupting or endangering other members of society [6]. Additionally, autonomous vehicles mean that less space will need to be wasted on parking [6]. Reductions in space allocated for parking will alter how urban planners design their cities. Autonomous vehicles will also revolutionize how people commute and have many environmental benefits. As such is the case, policy makers need to become increasingly flexible as self-driving cars are assimilated into society. 
-	
 
 	</p>
 
 	<p>
-	The value of ethics is truly seen if and only if engineers, designers, and corporate leaders uphold their professional responsibility to abide by the fundamental ethical standards that have been set for them. 
 
-	Autonomous vehicles will strongly affect all of the stakeholders involved. Nevertheless, it is up to these stakeholders to ensure that this new technology is integrated smoothly into our society, for the benefit of all of everyone involved. 
-
-	A major issue regarding the introduction of autonomous vehicles is identifying who is at fault when the machine does not behave as expected. Uber has been one of the pioneers in research for self-driving vehicles. Nonetheless, in March 2017, this company was involved in a high speed crash with an autonomous vehicle [9]. When analyzing this accident, it is important to consider the various agents that were involved. Automation calls for a rewrite in political liability laws as anybody throughout the supply chain can be liable for a malfunctioning robot [10]. In a future involving autonomous vehicles, companies like Uber will need to become responsible for the infrastructure that they introduce. These liability concerns once again demonstrate the political nature of self-driving vehicles.
-	</p>
-
-	<p>
-		
-	References:
-
-	[7] C. Whitbeck, “Responsibility and Creativity in Engineering,” Emerging Technologies and Ethical Issues in Engineering: Papers from a Workshop, 2004. [Online]. Available: https://www.nap.edu/read/11083/chapter/8. [Accessed: 13-Jun-2020].
-	
-	[8] J. Borenstien, J. Herkert, and K. Miller, “Self-Driving Cars: Ethical Responsibilities of Design Engineers,” IEEE Technology and Society Magazine Vol. 36, No. 2 , 17-Jun-2017. [Online]. Available: https://ieeexplore.ieee.org/abstract/document/7947308. [Accessed: 14-Jun-2020].
-
-	[5] G. E. Marchant and R. A. Lindor, “The Coming Collision Between Autonomous Vehicles and the Liability System,” Santa Clara Law Review, 17-Dec-2012. [Online]. Available: https://digitalcommons.law.scu.edu/cgi/viewcontent.cgi?referer=https://scholar.google.com/&httpsredir=1&article=2731&context=lawreview. [Accessed: 13-Jun-2020].
-
-	[6] E. Fraedrich, D. Heinrichs, F. J. Bahamonde-Birke, and R. Cyganski, “Autonomous driving, the built environment and policy implications,” Transportation Research Part A: Policy and Practice, 17-Mar-2018. [Online]. Available: https://www.sciencedirect.com/science/article/pii/S0965856417301696. [Accessed: 20-Jun-2020].
-
-	[1] N. Mehrabi, F. Morstatter, N. Saxena, K. Lerman, and A. Galstyan, “A Survey on Bias and Fairness in Machine Learning,” University of Southern California Information Sciences Institute, 17-Sep-2019. [Online]. Available: https://arxiv.org/pdf/1908.09635.pdf. [Accessed: 18-Jul-2020].
-	
-	[2] T. Tommasi, N. Patricia, B. Caputo, and T. Tuytelaars, “A Deeper Look at Dataset Bias,” SpringerLink, 13-Sep-2017. [Online]. Available: https://link.springer.com/chapter/10.1007/978-3-319-58347-1_2. [Accessed: 18-Jul-2020].
-	
-	[3] D. Danks and A. J. London, “Algorithmic Bias in Autonomous Systems,” International Joint Conference on Artificial Intelligence, 19-Aug-2017. [Online]. Available: https://www.researchgate.net/profile/Alex_London/publication/318830422_Algorithmic_Bias_in_Autonomous_Systems/links/5a4bb017aca2729b7c893d1b/Algorithmic-Bias-in-Autonomous-Systems.pdf. [Accessed: 18-Jul-2020].
-	
-	[4] R. Binns, “Fairness in Machine Learning: Lessons from Political Philosophy,” Journal of Machine Learning Research , 02-Jan-2018. [Online]. Available: https://arxiv.org/pdf/1712.03586.pdf. [Accessed: 18-Jul-2020].
-
-	[9] D. Bissell, “Automation interrupted: How autonomous vehicle accidents transform the material politics of automation,” Political Geography, 19-May-2018. [Online]. Available: https://www.sciencedirect.com/science/article/pii/S0962629817303943. [Accessed: 06-Jun-2020].
-
-	[10] P. Lin, K. Abney, and G. Beckey, “Robot ethics: Mapping the issues for a mechanized world,” Digital Commons @ Cal Poly, 2011. [Online]. Available: https://digitalcommons.calpoly.edu/cgi/viewcontent.cgi?article=1020&context=phil_fac. [Accessed: 06-Jun-2020].
+	The value of ethics is truly seen if and only if engineers, designers, and corporate leaders uphold their professional responsibility to abide by the fundamental ethical standards that have been set for them. It is up to these departments to ensure that this new technology is integrated smoothly into our society, for the benefit of all of everyone involved. 
 
 
 	</p>
+
+
+	<h3>References:</h3>
+
+	<ol>
+
+	<li> C. Whitbeck, "Responsibility and Creativity in Engineering," Emerging Technologies and Ethical Issues in Engineering: Papers from a Workshop, 2004. [Online]. Available: https://www.nap.edu/read/11083/chapter/8. [Accessed: 27-July-2020].</li> <br>
+	
+	<li> J. Borenstien, J. Herkert, and K. Miller, "Self-Driving Cars: Ethical Responsibilities of Design Engineers," IEEE Technology and Society Magazine Vol. 36, No. 2 , 17-Jun-2017. [Online]. Available: https://ieeexplore.ieee.org/abstract/document/7947308. [Accessed: 27-July-2020].</li> <br>
+
+	<li> N. Mehrabi, F. Morstatter, N. Saxena, K. Lerman, and A. Galstyan, "A Survey on Bias and Fairness in Machine Learning," University of Southern California Information Sciences Institute, 17-Sep-2019. [Online]. Available: https://arxiv.org/pdf/1908.09635.pdf. [Accessed: 27-July-2020]. </li> <br>
+	
+	<li> T. Tommasi, N. Patricia, B. Caputo, and T. Tuytelaars, "A Deeper Look at Dataset Bias," SpringerLink, 13-Sep-2017. [Online]. Available: https://link.springer.com/chapter/10.1007/978-3-319-58347-1_2. [Accessed: 27-July-2020]. </li> <br>
+	
+	<li> D. Danks and A. J. London, "Algorithmic Bias in Autonomous Systems," International Joint Conference on Artificial Intelligence, 19-Aug-2017. [Online]. Available: https://www.researchgate.net/profile/Alex_London/publication/318830422_Algorithmic_Bias_in_ Autonomous_Systems/links/5a4bb017aca2729b7c893d1b/Algorithmic-Bias-in-Autonomous-Systems.pdf. [Accessed: 27-July-2020]. </li> <br>
+	
+	<li> R. Binns, "Fairness in Machine Learning: Lessons from Political Philosophy," Journal of Machine Learning Research , 02-Jan-2018. [Online]. Available: https://arxiv.org/pdf/1712.03586.pdf. [Accessed: 27-July-2020]. </li> <br>
+
+	<li> G. E. Marchant and R. A. Lindor, "The Coming Collision Between Autonomous Vehicles and the Liability System," Santa Clara Law Review, 17-Dec-2012. [Online]. Available: https://digitalcommons.law.scu.edu/cgi/viewcontent.cgi?referer=https://scholar.google.com/&httpsredir=1&article=2731&context=lawreview. [Accessed: 27-July-2020]. </li> <br>
+
+	<li> E. Fraedrich, D. Heinrichs, F. J. Bahamonde-Birke, and R. Cyganski, "Autonomous driving, the built environment and policy implications," Transportation Research Part A: Policy and Practice, 17-Mar-2018. [Online]. Available: https://www.sciencedirect.com/science/article/pii/S0965856417301696. [Accessed: 27-July-2020]. </li> <br>
+
+	<li> D. Bissell, "Automation interrupted: How autonomous vehicle accidents transform the material politics of automation," Political Geography, 19-May-2018. [Online]. Available: https://www.sciencedirect.com/science/article/pii/S0962629817303943. [Accessed: 27-July-2020]. </li> <br>
+
+	<li> P. Lin, K. Abney, and G. Beckey, "Robot ethics: Mapping the issues for a mechanized world," Digital Commons @ Cal Poly, 2011. [Online]. Available: https://digitalcommons.calpoly.edu/cgi/viewcontent.cgi?article=1020&context=phil_fac. [Accessed: 27-July-2020]. </li> <br>
+
+
+	</ol>
 
 
 </body>

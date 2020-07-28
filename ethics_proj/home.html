@@ -2,22 +2,113 @@
 <html>
 <head>
 	<title>Ethics of Autonomous Vehicles</title>
+
+	<style type="text/css">
+		/* Style the video: 100% width and height to cover the entire window */
+		#myVideo {
+		  position: fixed;
+		  right: 0;
+		  bottom: 0;
+		  min-width: 100%;
+		  min-height: 100%;
+		}
+
+		/* Add some content at the bottom of the video/page */
+		.content {
+		  position: fixed;
+		  top: 20%;
+		  background: rgba(0, 0, 0, 0.5);
+		  color: #f1f1f1;
+		  width: 100%;
+		  right: 0;
+		}
+
+		p {
+			padding: 20px;
+			line-height: 1.5;
+			font-size: 18px;
+		}
+
+		.cross-fade {
+		  display: inline-block;
+		  padding: 1px 30px;
+		  border: 2px white solid;
+		  text-align: center;
+		  text-decoration: none;
+		  color: white;
+		  position: relative;
+		  overflow: hidden;
+		  transition: color 0.5s ease-in-out;
+		  z-index: 1;
+		  border-radius: 0px;
+		}
+
+		.cross-fade:before {
+		  content: '';
+		  position: absolute;
+		  top: 0;
+		  left: -25%;
+		  width: 150%;
+		  height: 100%;
+		  background: rgba(9,171,182,1);
+		  transition: transform 0.5s ease-in-out;
+		  z-index: -1;
+		  transform: translate3d(100%, 0, 0) skew(20deg);
+		  transform-origin: 0 0;
+		}
+
+		.cross-fade:after {
+		  content: '';
+		  position: absolute;
+		  top: 0;
+		  left: -25%;
+		  width: 150%;
+		  height: 100%;
+		  background: linear-gradient(to right, rgba(55,223,235,1),  rgba(9,171,182,1));
+		  transition: transform 0.5s ease-in-out;
+		  z-index: -1;
+		  transform: translate3d(-100%, 0, 0) skew(20deg);
+		  transform-origin: 100% 100%;
+		}
+
+		.cross-fade:hover {
+		  color: black;
+		}
+
+		.cross-fade:hover:before {
+		  transform: translate3d(0, 0, 0) skew(20deg);
+		}
+
+		.cross-fade:hover:after {
+		  transform: translate3d(0, 0, 0) skew(20deg);
+		}
+	</style>
 </head>
 <body>
 
-	<h1>Autonomous Vehicles: The Ethical Persepctive</h1>
+	<video autoplay muted loop id="myVideo">
+	  <source src="video.mp4" type="video/mp4">
+	</video>
+
+	<div class = content>
+
+	<center><h1>Autonomous Vehicles: The Ethical Perspective</h1> </center>
+	<center><h3>by: Sumit Choudhury</h1> </center>
 
 	<p> 
 
 Autonomous vehicles are a revolutionary technology that will change transportation as we know it. Self-driving cars have promised to substantially increase safety on the road and human productivity by giving people back the time spent driving. They also serve as a way to make personalized transit much more accessible. Nevertheless, such a technology is going to disturb many existing systems and raise several ethical questions. These vehicles need to be designed and implemented in a way that will fit current societal standards. The ethical obligations of the algorithms behind autonomous vehicles must be properly analyzed and evaluated. Additionally, it must become clear where accident liability falls as it begins shifting away from a human operator. There are also concerns regarding cybersecurity and data privacy, as well as how autonomous vehicles will affect automotive-related industries. The purpose of this website is to bring light to the ethical dimensions implied by the introduction of autonomous vehicles, so that when they are brought into society, the transition will be smooth and beneficial to all parties involved.
 
 	</p>
+	<center>
+	<a class='cross-fade' href="mdm.html">Moral Decision Making</a>
+	<a class='cross-fade' href="di.html">Design & Implementation</a>
+	<a class='cross-fade' href="lpr.html">Liability & Professional Responsibility</a>
+	<a class='cross-fade' href="cp.html">Cybersecurity & Privacy</a>
+	<a class='cross-fade' href="sei.html">Socio-Economic Impact</a>
+	</center>
 
-	<a href="mdm.html">Moral Decision Making</a>
-	<a href="di.html">Design & Implementation</a>
-	<a href="lpr.html">Liability & Professional Responsibility</a>
-	<a href="cp.html">Cybersecurity & Privacy</a>
-	<a href="sei.html">Socio-Economic Impact</a>
+	</div>
 
 </body>
 </html>

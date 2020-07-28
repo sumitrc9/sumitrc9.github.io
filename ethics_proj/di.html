@@ -2,25 +2,91 @@
 <html>
 <head>
 	<title>Ethics of Autonomous Vehicles: Design & Implementation</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+	<style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+
+    p, h1, ol, h3 {
+    	margin-left: 20%;
+    	margin-right: 20%;
+    	line-height: 1.5;
+    }
+
+    p, li {
+    	font-size: 18px;
+    }
+
+    ol {
+    counter-reset: list;
+	}
+	ol > li {
+	    list-style: none;
+	}
+	ol > li:before {
+	    content: "["counter(list) "] ";
+	    counter-increment: list;
+	}
+  </style>
 </head>
 <body>
+
+
+	<nav class="navbar navbar-inverse">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>                        
+	      </button>
+	      <a class="navbar-brand" href="home.html"><i class='fas fa-car-side' style='font-size:24px'></i></a>
+	    </div>
+	    <div class="collapse navbar-collapse" id="myNavbar">
+	      <ul class="nav navbar-nav">
+	        <li><a href="mdm.html">Moral Decision Making</a></li>
+	        <li><a href="di.html">Design & Implementation</a></li>
+	        <li><a href="lpr.html">Liability & Professional Responsibility</a></li>
+	        <li><a href="cp.html">Cybersecurity & Privacy</a></li>
+	        <li><a href="sei.html">Socio-Economic Impact</a></li>
+	      </ul>
+	      <!-- <ul class="nav navbar-nav navbar-right">
+	        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+	      </ul> -->
+	    </div>
+	  </div>
+	</nav>
+
 	<h1>Design & Implementation</h1>
 
 	<p>
 
-	Humans will need to interact with this newfound technology. How will humans and computers interact with each other?
+	Autonomous vehicles will change how humans interact with computers and other humans. The relationship between the driver and the vehicle and the driver and other passengers will be completely different as more and more control of the car is handed over to the algorithms. People will need to adapt in order to properly interact with this newfound technology. Nevertheless, self-driving cars need to be designed such that they are suitable for a diverse audience. 
 
-	A technology like autonomous vehicles is likely to dramatically change the way humans interact with computers and other humans. With self-driving cars, the relationship between the driver and the vehicle and the driver and other passengers will be completely different as more and more control of the car is handed over to the algorithms. Nevertheless, self-driving cars need to be designed such that they will ethically provide longer term social benefits to all who are involved. 
+	</p>
+
+	<p>
+
 	
-	Self-driving cars are going to revolutionize human to computer and human to human interaction. In a one-day workshop simulating experiences in an autonomous vehicle, many designers explored how to design the interior of a self-driving car such that both social interaction and interaction with the technology itself can be optimized [1]. Many of the proposed designs suggested complete detachment from operation of the vehicle. This set-up prioritizes more the social interaction between other people in the vehicle. Other designs were similar to the arrangement of traditional cars in order to nudge the user to be more aware of the surroundings and the car’s decisions. This goes to show how the design of the self-driving car itself can impact the behavior of its users. In the context of human to human interactions, autonomous cars may even create bubbles within society. With taxi drivers and the recent prominence of ride-sharing apps such as Uber or Lyft, traditional cars allow for more interactions with different types of people. However, with self-driving cars, many users may isolate themselves socially creating a less interactive environment compared to what exists currently.  
+	Self-driving cars are going to revolutionize human to computer and human to human interaction. While simulating experiences in an autonomous vehicle, many designers explored how to design the interior of a self-driving car such that both social interaction and interaction with the technology itself can be optimized [1]. Some of the proposed designs suggested complete detachment from  the vehicle. This prioritizes more social interaction between other people in the vehicle. Other designs were more similar to the arrangement of traditional cars to increase awareness of the surroundings and the car’s decisions. The simulations revealed that design of the self-driving car itself can impact the behavior of its users. 
 
+	</p>
+	<p>
+
+	Considering human to human interactions, autonomous cars can hypothetically create bubbles within society. With taxi drivers and the recent prominence of ride-sharing apps, traditional cars allow for greater interaction with different types of people. However, with self-driving cars, many users may isolate themselves socially creating a less interactive environment compared to what exists currently. On the other hand, the advent of robotaxis may preserve this aspect of human interaction.
 		
 	</p>
 
 	<p>
-	One promise of autonomous vehicles is that the promise to be more accessible than the traditional vehicles. 
+	Autonomous vehicles is that the promise to be more accessible than the traditional vehicles. 
 
-	In a different social context, one of the many advantages of autonomous vehicles is that it increases accessibility for less abled users. With traditional cars, it becomes difficult for elderly people and people with limited mobility to travel freely. Elderly drivers can oftentimes be unaware of certain aspects of their surroundings and can make costly mistakes while driving. Autonomous vehicles are likely to solve the problem brought up by the elderly driver while promoting social interaction among the elderly [2]. Nevertheless, if these vehicles are to aid less abled people, they also must be implemented to suit them. In this regard, it is up to the designers of autonomous vehicles to ensure that this technology is extremely easy to use. Assistive robotics  can even open up the prospects of a beneficial scenario for the management of the public-health crisis posed by dementia and population ageing [3]. Self-driving cars can help us better take care of the elderly and other people in need of assistance by allowing them to easily reach places they need to go. For people with dementia, autonomous vehicles can remember their most important destinations so that these people have a fail safe when they forget what they were doing. However, this does raise the ethical concerns regarding who is able to access and manipulate the data of these special users. Nevertheless, self-driving cars can redefine the social possibilities that these people had before.
+	One of the many advantages of autonomous vehicles is that it increases accessibility for less abled users. With traditional cars, it becomes difficult for elderly people and people with limited mobility to travel freely. Elderly drivers can oftentimes be unaware of certain aspects of their surroundings and can make costly mistakes while driving. Autonomous vehicles are likely to solve the problem brought up by the elderly driver while promoting social interaction among the elderly [2]. Nevertheless, if these vehicles are to aid less abled people, they also must be implemented to suit them. In this regard, it is up to the designers of autonomous vehicles to ensure that this technology is extremely easy to use. Assistive robotics  can even open up the prospects of a beneficial scenario for the management of the public-health crisis posed by dementia and population ageing [3]. Self-driving cars can help us better take care of the elderly and other people in need of assistance by allowing them to easily reach places they need to go. For people with dementia, autonomous vehicles can remember their most important destinations so that these people have a fail safe when they forget what they were doing. However, this does raise the ethical concerns regarding who is able to access and manipulate the data of these special users. Nevertheless, self-driving cars can redefine the social possibilities that these people had before.
 		
 	</p>
 
@@ -32,20 +98,21 @@
 
 	</p>
 
-	<p>
-	References:
+	<h3>References:</h3>
 
-	[1] A. Meschtscherjakov, M. Tscheligi, D. Szostak, S. Krome, B. Pfleging, R. Ratan, I. Politis, S. Baltodano, D. Miller, and W. Ju, “HCI and Autonomous Vehicles: Contextual Experience Informs Design,” HCI and Autonomous Vehicles | Proceedings of the 2016 CHI Conference Extended Abstracts on Human Factors in Computing Systems, 01-May-2016. [Online]. Available: https://dl.acm.org/doi/abs/10.1145/2851581.2856489. [Accessed: 11-Jul-2020].
+	<ol>
+
+	<li> A. Meschtscherjakov, M. Tscheligi, D. Szostak, S. Krome, B. Pfleging, R. Ratan, I. Politis, S. Baltodano, D. Miller, and W. Ju, "HCI and Autonomous Vehicles: Contextual Experience Informs Design," HCI and Autonomous Vehicles | Proceedings of the 2016 CHI Conference Extended Abstracts on Human Factors in Computing Systems, 01-May-2016. [Online]. Available: https://dl.acm.org/doi/abs/10.1145/2851581.2856489. [Accessed: 28-Jul-2020]. </li> <br>
 	
-	[2] Y. G. Ji, “HCI for Elderly and Smart Vehicle Interaction,” International Journal of Human-Computer Interaction, 09-Jul-2015. [Online]. Available: http://interaction.yonsei.ac.kr/wp-content/uploads/2017/07/HCI-for-Elderly-and-Smart-Vehicle-Interaction.pdf. [Accessed: 11-Jul-2020].
+	<li> Y. G. Ji, "HCI for Elderly and Smart Vehicle Interaction," International Journal of Human-Computer Interaction, 09-Jul-2015. [Online]. Available: http://interaction.yonsei.ac.kr/wp-content/uploads/2017/07/HCI-for-Elderly-and-Smart-Vehicle-Interaction.pdf. [Accessed: 28-Jul-2020]. </li> <br>
 	
-	[3] M. Ienca, F. Jotterand, C. Vica, and B. Elger, “Social and Assistive Robotics in Dementia Care: Ethical Recommendations for Research and Practice,” International Journal of Social Robotics, 22-Jun-2016. [Online]. Available: https://link.springer.com/article/10.1007/s12369-016-0366-7. [Accessed: 11-Jul-2020].
+	<li> M. Ienca, F. Jotterand, C. Vica, and B. Elger, "Social and Assistive Robotics in Dementia Care: Ethical Recommendations for Research and Practice," International Journal of Social Robotics, 22-Jun-2016. [Online]. Available: https://link.springer.com/article/10.1007/s12369-016-0366-7. [Accessed: 28-Jul-2020]. </li> <br>
 
-	[4] D. J. Fagnant and K. Kockelman, “Preparing a nation for autonomous vehicles: opportunities, barriers and policy recommendations,” Transportation Research Part A: Policy and Practice, 15-May-2015. [Online]. Available: https://www.sciencedirect.com/science/article/pii/S0965856415000804. [Accessed: 06-Jun-2020].
+	<li> D. J. Fagnant and K. Kockelman, "Preparing a nation for autonomous vehicles: opportunities, barriers and policy recommendations," Transportation Research Part A: Policy and Practice, 15-May-2015. [Online]. Available: https://www.sciencedirect.com/science/article/pii/S0965856415000804. [Accessed: 28-Jul-2020]. </li> <br>
 
-	[5] L. Winner, “Do Artifacts Have Politics?,” Daedalus, Vol. 109, No. 1, Modern Technology: Problem or Opportunity?, 10-Jun-2009. [Online]. Available: https://www.cc.gatech.edu/~beki/cs4001/Winner.pdf. [Accessed: 06-Jun-2020].
+	<li> L. Winner, "Do Artifacts Have Politics?," Daedalus, Vol. 109, No. 1, Modern Technology: Problem or Opportunity?, 10-Jun-2009. [Online]. Available: https://www.cc.gatech.edu/~beki/cs4001/Winner.pdf. [Accessed: 28-Jul-2020]. </li> <br>
 
-	</p>
+	</ol>
 
 </body>
 </html>

@@ -2,8 +2,68 @@
 <html>
 <head>
 	<title>Ethics of Autonomous Vehicles: Moral Decision Making</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+	<style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+
+    }
+
+    p, h1, ol, h3, h2 {
+    	margin-left: 20%;
+    	margin-right: 20%;
+    	line-height: 1.5;
+    }
+
+    p, li {
+    	font-size: 18px;
+    }
+
+    ol {
+    counter-reset: list;
+	}
+	ol > li {
+	    list-style: none;
+	}
+	ol > li:before {
+	    content: "["counter(list) "] ";
+	    counter-increment: list;
+	}
+  </style>
 </head>
 <body>
+
+	<nav class="navbar navbar-inverse">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>                        
+	      </button>
+	      <a class="navbar-brand" href="home.html"><i class='fas fa-car-side' style='font-size:24px'></i></a>
+	    </div>
+	    <div class="collapse navbar-collapse" id="myNavbar">
+	      <ul class="nav navbar-nav">
+	        <li><a href="mdm.html">Moral Decision Making</a></li>
+	        <li><a href="di.html">Design & Implementation</a></li>
+	        <li><a href="lpr.html">Liability & Professional Responsibility</a></li>
+	        <li><a href="cp.html">Cybersecurity & Privacy</a></li>
+	        <li><a href="sei.html">Socio-Economic Impact</a></li>
+	      </ul>
+	      <!-- <ul class="nav navbar-nav navbar-right">
+	        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+	      </ul> -->
+	    </div>
+	  </div>
+	</nav>
+
+
 	<h1>Moral Decision Making</h1>
 
 	<p>
@@ -12,15 +72,21 @@
 
 	</p>
 
+	<h2>Classical Ethics</h2>
+
 	<p>
 	
 	Classical ethics can serve as a starting point for evaluating the moral standards of autonomous vehicles. Two of the major lenses of classical ethics are consequentialism and deontology. 
 
 	</p>
 
+	<h3>Consequentialism</h3>
+
 	<p>
 	From a consequentialist's perspective, an act's morality is dependent only on the results of the act, and the goodness of the act is determined by its consequence [1]. With respect to autonomous vehicles, the most common consequentialist approach is utilitarianism. This school of thought emphasizes that a moral decision is one that maximizes some form of utility. However, the decisions that a self-driving car can make can vastly differ based on what metric is used to measure utility [2]. One measure of utility could be human life. If a self-driving car was programmatically designed in this fashion, it would always prioritize a decision that saves that most people. For example, this type of autonomous vehicle would choose to crash into a building and kill the river over hitting five people in the middle of the road. Many people think that this pure consequentialist approach is not ethically sound as the vehicle should not be able to declare a single life to be forfeit. Another utilitarian approach to self-driving cars is having utility be measured through economic costs. Presented with a similar scenario, the car would choose to hit the five people instead because the damage to the building and the vehicle would lead to higher economic costs. Once again, most people thought that this approach also does not properly capture the ethical standards held by individuals. This goes to show that a strict utilitarian approach may not be ideal for autonomous vehicles.
 	</p>
+
+	<h3>Deontology</h3>
 
 	<p>
 	Rather than worrying about consequences, the deontological perspective of ethics is concerned with individual actions and an obligation to behave morally [3]. This approach to ethics requires a predefined set of rules which the algorithms of a self-driving car will need to abide by. However, a problem with applying deontological ethics to autonomous vehicles is that complex human values do not easily translate into computer code [2]. For example, one possible ethical rule would be to preserve the lives of older people over younger people. Having such a rule would mean that the vehicle would need to be able to  identify the age of all people in its near vicinity. A similar issue arises if the car tries to distinguish between rich and poor people. This introduces an additional level of complexity into the autonomous vehicle and still does not ethically resonate with most people. A fixed set of rules may not always help the car in making moral decisions.
@@ -35,6 +101,8 @@
 
 	</p>
 
+	<h2>What is a moral machine?</h2>
+
 	<p>
 
 
@@ -43,6 +111,7 @@
 
 	</p>
 
+	<h2>Does morality matter?</h2>
 
 	<p>
 	
@@ -51,25 +120,28 @@
 	</p>
 	<p>
 
-	There is no correct answer to the moral question. Moral machines do not need to be ideal ethical beings to function satisfactorily in responding to morally significant situations. Regardless, building these machines requires a comprehensive model for how humans arrive at satisfactory moral judgments [5]. Rather than being morally perfect, the algorithms which drive self-driving cars will be expected to be held to the same moral standards as human beings. Understanding morality from various classical and cultural perspectives provides more insight into the complexities of having a machine meet these moral standards.
+	There is no correct answer to the moral question. Moral machines do not need to be ideal ethical beings to function satisfactorily in responding to morally significant situations. Regardless, building these machines requires a comprehensive model for how humans arrive at satisfactory moral judgments [5]. Rather than being morally perfect, the algorithms which drive self-driving cars will be expected to be held to the same moral standards as human beings. A common ideology is that fair algorithms will abide by the principles of egalitarianism since it can provide a sense of deontic justice [6]. Understanding morality from various classical and cultural perspectives provides more insight into the complexities of having a machine meet these moral standards.
 
 
 	</p>
 
-	<p>
-	References:
+	<h3>References:</h3>
 
-	[1] “Ethics - Introduction to ethics: Consequentialism,” BBC, 2014. [Online]. Available: http://www.bbc.co.uk/ethics/introduction/consequentialism_1.shtml. [Accessed: 27-July-2020].
+	<ol>
+	
 
-	[2] N. J. Goodall, “Machine Ethics and Automated Vehicles,” SpringerLink, Jun-2014. [Online]. Available: https://link.springer.com/chapter/10.1007/978-3-319-05990-7_9. [Accessed: 27-Jul-2020].
+	<li> "Ethics - Introduction to ethics: Consequentialism," BBC, 2014. [Online]. Available: http://www.bbc.co.uk/ethics/introduction/consequentialism_1.shtml. [Accessed: 27-July-2020]. </li> <br>
 
-	[3] “Ethics - Introduction to ethics: Duty-based ethics,” BBC, 2014. [Online]. Available: http://www.bbc.co.uk/ethics/introduction/duty_1.shtml. [Accessed: 27-July-2020].
+	<li> N. J. Goodall, "Machine Ethics and Automated Vehicles," SpringerLink, Jun-2014. [Online]. Available: https://link.springer.com/chapter/10.1007/978-3-319-05990-7_9. [Accessed: 27-Jul-2020]. </li> <br>
 
-	[4] E. Awad, S. Dsouza, R. Kim, J. Schulz, J. Henrich, A. Shariff, J.-F. Bonnefon, and I. Rahwan, “The Moral Machine experiment,” Nature News, 24-Oct-2018. [Online]. Available: https://www.nature.com/articles/s41586-018-0637-6. [Accessed: 27-July-2020].
+	<li> "Ethics - Introduction to ethics: Duty-based ethics," BBC, 2014. [Online]. Available: http://www.bbc.co.uk/ethics/introduction/duty_1.shtml. [Accessed: 27-July-2020]. </li> <br>
 
-	[5] W. Wallach, “Robot minds and human ethics: the need for a comprehensive model of moral decision making,” Ethics and Information Technology, 07-Jul-2010. [Online]. Available: https://link.springer.com/article/10.1007/s10676-010-9232-8. [Accessed: 27-July-2020].
+	<li> E. Awad, S. Dsouza, R. Kim, J. Schulz, J. Henrich, A. Shariff, J.-F. Bonnefon, and I. Rahwan, "The Moral Machine experiment," Nature News, 24-Oct-2018. [Online]. Available: https://www.nature.com/articles/s41586-018-0637-6. [Accessed: 27-July-2020]. </li> <br>
 
-	</p>
+	<li> W. Wallach, "Robot minds and human ethics: the need for a comprehensive model of moral decision making," Ethics and Information Technology, 07-Jul-2010. [Online]. Available: https://link.springer.com/article/10.1007/s10676-010-9232-8. [Accessed: 27-July-2020]. </li> <br>
+
+	<li> R. Binns, "Fairness in Machine Learning: Lessons from Political Philosophy," Journal of Machine Learning Research , 02-Jan-2018. [Online]. Available: https://arxiv.org/pdf/1712.03586.pdf. [Accessed: 27-July-2020]. </li> <br>
+	</ol>
 
 </body>
 </html>
